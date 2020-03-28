@@ -1,7 +1,14 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "./header.scss";
+@import "./main-content.scss";
+@import "./form.scss";
+@import "./thankyou-page.scss";
 
 body {
-  background: $c-gray;
+  background: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+.thankyou-page {
+  display: none;
 }

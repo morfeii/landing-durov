@@ -1,0 +1,161 @@
+
+.thankyou-page {
+  width: 750px;
+  height: 515px;
+  background: #bce1f6;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1),
+    0 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  margin: 20px auto;
+  padding: 50px 0;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  color: #000;
+  text-align: center;
+  box-sizing: border-box;
+
+  &__title {
+    margin: 0 auto 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 auto 59px;
+  }
+
+  &__instuction {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 auto 20px;
+    text-align: start;
+    max-width: 466px;
+  }
+
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 466px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &__step {
+    margin-bottom: 20px;
+    list-style-position: inside;
+  }
+
+  &__button {
+    width: 291px;
+    height: 56px;
+    margin-top: 39px;
+    border: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(90deg, #12fff7 0%, #28e17e 169.24%);
+    border-radius: 15px;
+    transition: all 0.5s;
+
+    &:hover {
+      background: linear-gradient(-45deg, #12fff7 0%, #28e17e 100%);
+    }
+
+    &:active {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .thankyou-page {
+    width: 500px;
+
+    &__instuction {
+      width: 80%;
+      margin: 28px auto;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .thankyou-page {
+    width: 344px;
+    height: 466px;
+    padding-top: 38px;
+
+    &__instuction {
+      width: 82%;
+      margin: 33px auto;
+      font-size: 12px;
+      line-height: 13px;
+    }
+
+    &__title {
+      font-size: 19px;
+      line-height: 22px;
+    }
+
+    &__subtitle {
+      font-size: 11px;
+      line-height: 12px;
+      width: 90%;
+      margin: auto;
+    }
+
+    &__steps {
+      font-size: 11px;
+      line-height: 12px;
+      width: 90%;
+      margin: auto;
+    }
+
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .thankyou-page {
+    width: 304px;
+    height: 466px;
+    padding-top: 38px;
+
+    &__instuction {
+      width: 82%;
+      margin: 33px auto;
+      font-size: 10px;
+      line-height: 13px;
+    }
+
+    &__steps {
+      font-size: 10px;
+      max-width: 90%;
+    }
+
+    &__title {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    &__subtitle {
+      font-size: 8px;
+      line-height: 12px;
+      width: 90%;
+      margin: auto;
+    }
+
+    &__button {
+      width: 90%;
+      margin: 25px 0 0;
+    }
+  }
+}

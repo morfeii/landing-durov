@@ -3,11 +3,160 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Durov's Brothers</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header class="header">
+      <img class="header__plane origami-1" src="./images/origami-1.png" alt="Background plane">
+      <img class="header__plane origami-2" src="./images/origami-2.png" alt="Background plane">
+      <img class="header__plane origami-3" src="./images/origami-3.png" alt="Background plane">
+      <img class="header__plane origami-4" src="./images/origami-4.png" alt="Background plane">
+      <img class="header__plane origami-5" src="./images/origami-5.png" alt="Background plane">
+      <img class="header__plane origami-6" src="./images/origami-6.png" alt="Background plane">
+      <img class="header__plane origami-7" src="./images/origami-7.png" alt="Background plane">
+
+      <div class="header__top">
+
+        <div class="header__top logo">
+          <a href="#">
+            <img class ="logo__telegram" src="./images/telegram-logo.png" alt="Telegram logo">
+          </a>
+        </div>
+
+        <div class="header__top counter">
+          <p class="counter__text">Сейчас проходят регистрацию</p>
+          <div class="counter__number">
+            <span class="counter__amount">108 человек</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__content content">
+        <div class="content__info">
+          <h1 class="content__title">Запустите ваш онлайн-заработок в режиме автопилота</h1>
+          <p class="content__text">Революционная программа, на основе искусственного интеллекта от Павла и Николая Дуровых</p>
+          <button class="content__button">
+            Узнать условия заработка
+          </button>
+        </div>
+        <div class="content__screen">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/WpZZaniF5nM"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <button class="content__button content__button_extra" id="extra-button">
+            Узнать условия заработка
+          </button>
+        </div>
+      </div>
+
+      <div class="header__waves"></div>
+    </header>
+
+    <main class="main">
+      <img class="main__stars" src="./images/stars.png" alt="stars">
+
+      <div class="main__content advantages">
+        <div class="advantages__info">
+          <img class="advantages__image" src="./images/stability-icon.png" alt="Stability icon">
+          <div class="advantages__block">
+            <p class="advantages__text">Стабильный пассивный заработок на основе инновационного метода</p>
+          </div>
+        </div>
+
+        <div class="advantages__info">
+          <img class="advantages__image" src="./images/profit-icon.png" alt="Profit icon">
+          <div class="advantages__block">
+            <p class="advantages__text">Умножайте капитал и выводи деньги на карту любого банка России</p>
+          </div>
+        </div>
+
+        <div class="advantages__info">
+          <img class="advantages__image" src="./images/experience-icon.png" alt="Experience icon">
+          <div class="advantages__block">
+            <p class="advantages__text">Без необходимости иметь специальные умения в трейдинге</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form">
+        <h2 class="form__title">Получить доступ к платформе</h2>
+        <form class="form__fields" id="form__fields">
+          <div class="form__field">
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Имя"
+              required
+            >
+          </div>
+          <div class="form__field">
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Фамилия"
+              required
+            >
+          </div>
+          <div class="form__field">
+            <input
+              class="form__input"
+              type="email"
+              placeholder="E-mail"
+              required
+            >
+          </div>
+          <div class="form__field">
+            <input
+              class="form__input"
+              type="number"
+              placeholder="Номер телефона"
+              required
+            >
+          </div>
+          <div class="form__checkbox checkbox">
+            <div class="checkbox__container">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" checked="checked">
+                <span class="checkbox__custom"></span>
+              </label>
+              <div class="checkbox__text">Я согласен с Пользовательским соглашением</div>
+            </div>
+
+            <div class="checkbox__container">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox">
+                <span class="checkbox__custom"></span>
+              </label>
+              <div class="checkbox__text">Я согласен на обработку персональных данных</div>
+            </div>
+          </div>
+          <button class="form__button" id="form__button" type="submit">Подключиться</button>
+        </form>
+      </div>
+    </main>
+
+    <div class="thankyou-page" id="thankyou-page">
+      <h1 class="thankyou-page__title">Ваш личный аккаунт создан!</h1>
+      <h4 class="thankyou-page__subtitle">Осталось всего несколько шагов до вашего заработка… </h4>
+      <p class="thankyou-page__instuction">
+        firstname, вы успешно прошли регистрацию! Чтобы начать использовать все технологии нашей платформы, вам осталось:
+      </p>
+        <ol class="thankyou-page__steps">
+          <li class="thankyou-page__step">Дождаться звонка нашего консультанта и получить от него все инструкции:
+            как пользоваться кабинетом и выводить прибыль удобным для вас способом</li>
+          <li class="thankyou-page__step">Внести желаемую сумму на счет для запуска автоматической торговли платформой</li>
+          <li class="thankyou-page__step">Начать онлайн-торговлю и получить свой первый заработок!</li>
+        </ol>
+      <button class="thankyou-page__button">Перейти в личный кабинет</button>
+    </div>
+
+  <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

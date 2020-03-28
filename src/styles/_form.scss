@@ -1,0 +1,160 @@
+.form {
+  border: 6px solid #fbfbfb;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 18px 31px 0;
+  z-index: 5;
+  width: 457px;
+  height: 638px;
+
+  &__title {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 26px;
+  }
+
+  &__field {
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    width: 381px;
+    height: 64px;
+    background: #87c9ec;
+    border: 3px solid #bce1f6;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 45px;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &__button {
+    width: 381px;
+    height: 64px;
+    left: 10px;
+    top: 10px;
+    background: linear-gradient(90deg, #12fff7 0%, #28e17e 100%);
+    border-radius: 15px;
+    border: none;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+    outline: none;
+    color: #000;
+
+    &:hover {
+      background: linear-gradient(-90deg, #12fff7 0%, #28e17e 100%);
+      color: white;
+      transition: all 0.3s;
+    }
+
+    &:active {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.checkbox {
+  margin: 22px 0 33px;
+
+  &__text {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    margin-left: 35px;
+    color: #fff;
+  }
+
+  &__container {
+    margin-bottom: 18px;
+  }
+
+  &__label {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__custom {
+    position: absolute;
+    top: -5px;
+    height: 20px;
+    width: 20px;
+    transition: all 0.3s ease-out;
+    border: 3px solid #fff;
+  }
+
+  &__input {
+    display: none;
+
+    &:checked ~ .checkbox__custom {
+      background-color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    width: 344px;
+    padding: 10px 6px 33px 18px;
+
+    &__title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__input {
+      width: 303px;
+    }
+
+    &__button {
+      width: 303px;
+      font-size: 14px;
+    }
+
+    &__text {
+      font-size: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form {
+    width: 304px;
+    padding: 10px 6px 33px 18px;
+
+    &__title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__input {
+      width: 263px;
+    }
+
+    &__button {
+      width: 263px;
+      font-size: 14px;
+    }
+  }
+
+  .checkbox__text {
+    font-size: 10px;
+  }
+}

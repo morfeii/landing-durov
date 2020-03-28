@@ -1,4 +1,28 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+# Landing GGM-Test
+
+- [DEMO LINK](https://vuejs-crud-app.herokuapp.com/)
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run start
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Compiles and deploy on gh-pages
+```
+npm run deploy
+```
+
+### Lints and fixes files
+```
+npm run lint
+```

@@ -1,0 +1,375 @@
+.header {
+  background-color: #4e778d;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  position: relative;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__plane {
+    position: absolute;
+  }
+
+  &__waves {
+    background-image: url("./../images/waves.svg");
+    overflow: hidden;
+    height: 151px;
+    margin-bottom: 0;
+  }
+}
+
+.logo {
+  margin-top: 35px;
+  margin-left: 151px;
+}
+
+.counter {
+  position: relative;
+  width: 165px;
+  height: 166px;
+  right: 150px;
+  top: -3px;
+
+  border: 3px solid #fff;
+  border-radius: 0 0 90px 90px;
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #fff;
+  }
+
+  &__number {
+    position: absolute;
+    width: 107px;
+    height: 107px;
+    left: 27px;
+    top: 61px;
+    border-radius: 50%;
+    background: linear-gradient(360deg, #12fff7 -19.63%, #28e17e 67.29%);
+    border: 3px solid #fff;
+    box-sizing: border-box;
+  }
+
+  &__amount {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    color: #fff;
+  }
+}
+
+.content {
+  display: flex;
+  padding: 124px 150px 80px;
+  justify-content: space-between;
+
+  &__info {
+    width: 53%;
+    z-index: 9;
+  }
+
+  &__screen {
+    width: 43%;
+    height: 273px;
+    border: 10px solid #abffb9;
+    z-index: 1;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    margin: 0;
+    color: #e8f0ec;
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    width: 82%;
+    color: #e8f0ec;
+    margin: 32px 0 51px;
+  }
+
+  &__button {
+    width: 423px;
+    height: 72px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(90deg, #12fff7 0%, #28e17e 100%);
+    border-radius: 15px;
+    margin-left: 47px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    border: none;
+
+    &:hover {
+      background: linear-gradient(-90deg, #12fff7 0%, #28e17e 100%);
+      color: white;
+      transition: all 0.5s;
+    }
+
+    &:active {
+      transform: scale(1.05);
+    }
+
+    &_extra {
+      display: none;
+    }
+  }
+}
+
+.origami-1 {
+  top: 164px;
+  left: 65%;
+}
+
+.origami-2 {
+  top: 134px;
+  left: 4%;
+}
+
+.origami-3 {
+  top: 57px;
+  left: 37%;
+}
+
+.origami-4 {
+  top: 427px;
+  left: 51%;
+}
+
+.origami-5 {
+  top: 34px;
+  left: 77%;
+}
+
+.origami-6 {
+  top: 540px;
+  left: 8%;
+}
+
+.origami-7 {
+  top: 582px;
+  left: 83%;
+}
+
+@media screen and (max-width: 1350px) {
+  .content {
+    padding: 126px 93px 80px 86px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .content {
+    padding: 126px 40px 80px 26px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .content {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__screen {
+      width: 50%;
+    }
+
+    &__info {
+      width: 75%;
+      text-align: center;
+    }
+
+    &__text {
+      margin: 32px 0 18px;
+      width: 100%;
+    }
+
+    &__button {
+      display: none;
+
+      &_extra {
+        display: block;
+        margin: 35px auto 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    margin-left: 50px;
+  }
+
+  .counter {
+    right: 43px;
+  }
+
+  .content {
+    &__screen {
+      width: auto;
+    }
+
+    &__info {
+      width: auto;
+      text-align: center;
+    }
+
+    &__text {
+      width: 100%;
+    }
+  }
+
+  .header__waves {
+    margin-top: 1px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .origami-1 {
+    top: 21px;
+    left: 33%;
+  }
+
+  .origami-2 {
+    display: none;
+  }
+
+  .origami-3 {
+    top: 762px;
+    left: 50%;
+  }
+
+  .origami-4 {
+    display: none;
+  }
+
+  .origami-5 {
+    display: none;
+  }
+
+  .origami-6 {
+    top: 636px;
+    left: 37%;
+  }
+
+  .origami-7 {
+    top: 210px;
+    left: 87%;
+  }
+
+  .content {
+    padding: 28px 40px 80px 26px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .logo-telegram {
+    width: 48px;
+    height: 48px;
+  }
+
+  .counter {
+    right: 43px;
+    width: 98px;
+    height: 103px;
+
+    &__text {
+      font-size: 10px;
+      line-height: 10px;
+    }
+
+    &__number {
+      width: 62px;
+      height: 62px;
+      left: 20px;
+      top: 44px;
+    }
+
+    &__amount {
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 16px;
+      top: 12px;
+    }
+  }
+
+  .content {
+    &__info {
+      text-align: start;
+    }
+
+    &__title {
+      font-size: 23px;
+      line-height: 29px;
+    }
+
+    &__text {
+      margin: 14px 0 18px;
+    }
+
+    &__screen {
+      width: 336px;
+      height: 189px;
+    }
+
+    &__button_extra {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+  }
+
+  .origami-3 {
+    top: 567px;
+    left: 50%;
+  }
+
+  .origami-6 {
+    top: 445px;
+    left: 37%;
+  }
+
+  .origami-7 {
+    top: 136px;
+    left: 83%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .origami-3 {
+    top: 625px;
+    left: 50%;
+  }
+
+  .origami-6 {
+    top: 496px;
+    left: 30%;
+  }
+
+  .header-logo {
+    margin-left: 30px;
+  }
+
+  .header-counter {
+    right: 21px;
+  }
+
+  .header-content__screen {
+    width: 269px;
+    height: 151px;
+  }
+}
