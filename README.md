@@ -1,6 +1,6 @@
 # Landing GGM-Test
 
-- [DEMO LINK](https://vuejs-crud-app.herokuapp.com/)
+- [DEMO LINK](https://morfeii.github.io/landing-ggm/)
 
 ## Project setup
 ```
